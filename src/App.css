@@ -1,38 +1,88 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #74ebd5, #9face6);
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 450px;
+  width: 100%;
+  background: #ffffffdd;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title {
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+  color: #2c3e50;
+  font-weight: 700;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.search-box {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.search-box input {
+  flex: 1;
+  min-width: 200px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 2px solid #3498db;
+  border-radius: 10px;
+  outline: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-box button {
+  background: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.search-box button:hover {
+  background: #2980b9;
+}
+
+.weather-info {
+  background: #ecf0f1;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.weather-info h2 {
+  font-size: 1.6rem;
+  color: #34495e;
+  margin-bottom: 10px;
+}
+
+.weather-info p {
+  font-size: 1rem;
+  color: #555;
+  margin: 6px 0;
+}
+
+.weather-icon {
+  font-size: 40px;
+  color: #f39c12;
+  margin-bottom: 10px;
 }
